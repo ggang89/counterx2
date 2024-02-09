@@ -3,6 +3,8 @@ import {CounterText as Cou} from "../counterText"
 // ToDo : useState만 중괄호 쓰는 이유
 //default 안쓰고 export하면 중괄호 써야함
 
+import "./index.css";
+
 export default function Counter(){
   const [sugar, setSugar] = useState(0);
   // count :변하는 값,변수 명  / setCount :변경함수 /useState(초기값)

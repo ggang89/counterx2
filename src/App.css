@@ -4,13 +4,9 @@
   text-align: center;
   color: gray;
 }
-.counter_text{
-  font-size: 50px;
-  padding: 0 20px;
-  margin: 30px;
-}
-.container{
+
+
+.wrap{
   display: flex;
-  /* 기본이 strech로 되어있음. align-items를 center로 해서 중앙정렬됨 */
-align-items: center;
+  justify-content: space-around;
 }

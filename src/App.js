@@ -18,8 +18,12 @@ function App() {
      
     </header>
 
-  
+  <div className='wrap'>
+    <Counter/>
 <Counter/>
+</div>
+
+
 
     </div>
   );

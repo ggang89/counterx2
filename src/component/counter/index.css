@@ -1,0 +1,7 @@
+
+
+.container{
+  display: flex;
+  /* 기본이 strech로 되어있음. align-items를 center로 해서 중앙정렬됨 */
+align-items: center;
+}
