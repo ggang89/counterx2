@@ -5,8 +5,14 @@ import { useState } from 'react';
 
 function App() {
 //js코드 쓰는 자리
-const [count, setCount] = useState(0);
-// count :변하는 값  / setCount :변경함수 /useState(초기값)
+const [sugar, setSugar] = useState(0);
+// count :변하는 값,변수 명  / setCount :변경함수 /useState(초기값)
+const handleAdd =()=>{
+  setSugar(sugar +1);
+}
+const handleMinus =()=>{
+  setSugar(sugar -1);
+}
   return (
     <div>
 
@@ -19,10 +25,10 @@ const [count, setCount] = useState(0);
     </header>
 
     <div className='container'>
-      <button>-1</button>
-      <p className="counter_text">{count}</p>
+      <button onClick={handleMinus}>-1</button>
+      <p className="counter_text">{sugar}</p>
       {/* 변수를 사용하려면 중괄호를 한다 */}
-      <button>+1</button>
+      <button onClick={handleAdd}>+1</button>
 
     </div>
 
