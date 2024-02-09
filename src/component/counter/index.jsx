@@ -1,4 +1,7 @@
 import { useState } from "react";
+import {CounterText as Cou} from "../counterText"
+// ToDo : useState만 중괄호 쓰는 이유
+//default 안쓰고 export하면 중괄호 써야함
 
 export default function Counter(){
   const [sugar, setSugar] = useState(0);
@@ -14,10 +17,11 @@ export default function Counter(){
   return(
 <div className='container'>
       <button onClick={handleMinus}>-1</button>
-      <p className="counter_text">{sugar}</p>
+    <Cou counter={sugar} />
       {/* 변수를 사용하려면 중괄호를 한다 */}
       <button onClick={handleAdd}>+1</button>
 
     </div>
   );
 }
+

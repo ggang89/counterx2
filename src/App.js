@@ -1,8 +1,7 @@
 
 import './App.css';
-import Counter2 from './component/counter/counter';
 
-// ToDo : useState만 중괄호 쓰는 이유
+
 import Counter from './component/counter';
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
 
   
 <Counter/>
-<Counter2/>
+
     </div>
   );
 }
