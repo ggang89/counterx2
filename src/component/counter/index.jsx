@@ -20,6 +20,8 @@ export default function Counter() {
       <button onClick={handleMinus}>-1</button>
       <Cou counter={sugar} />
       {/* 변수를 사용하려면 중괄호를 한다 */}
+      {/* 여기 counter은 props이다. counter props는 
+        counterText컴포넌트와 연결된다 */}
       <button onClick={handleAdd}>+1</button>
     </div>
   );
